@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .container
+        h1 Applicants
+        ul#applications.list-unstyled
+
+        - for (var i = 0; i < applicants.length; i++){
+            li #{applicants[i].name}
+        -}
